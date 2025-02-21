@@ -24,7 +24,6 @@ parser.add_argument("--per_device_train_batch_size", type=int, default=2)  # 4
 parser.add_argument("--per_device_eval_batch_size", type=int, default=2)  # 4
 parser.add_argument("--total_batch_size", type=int, default=64)  # 16
 parser.add_argument("--learning_rate", type=float, default=1e-6)  # 1e-4
-parser.add_argument("--datasets", type=str, default='all')
 parser.add_argument("--server", type=str, default='SFT_GraphPRM_7B')
 
 
@@ -136,9 +135,6 @@ dataset = load_dataset('json', data_files=DATA_PATH)
 # aps_length = len(dataset['train'])
 # dataset['train'] = dataset['train'].select(random.sample(range(aps_length),30000))
 
-# if args.datasets == 'both':
-#     dataset2 = load_dataset('json',data_files=os.path.join(args.data_path, "graph_silo_part_2.json"))
-
 
 print('start processing')
 tokenized_datasets = dataset.map(preprocess_function)
@@ -166,7 +162,7 @@ print(world_size)
 print(ddp)
 
 time = time.strftime("%Y-%m-%d-%H-%M", time.localtime())
-fp = f'bs_{args.total_batch_size}_lr_{args.learning_rate}_datasets_{args.datasets}'
+fp = f'bs_{args.total_batch_size}_lr_{args.learning_rate}'
 output_path = f'./prm_results_qwen_new.{args.server}.{time}/{fp}'
 
 
@@ -237,5 +233,5 @@ trainer.train()
 # trainer.evaluate()
 
 # Save the fine-tuned model and tokenizer
-model.save_pretrained('./fine_tuned_GraphPRM_sft')  # fine_tuned_math_shepherd_lora_8bit
+model.save_pretrained('./fine_tuned_GraphPRM_sft')
 tokenizer.save_pretrained('./fine_tuned_GraphPRM_sft')

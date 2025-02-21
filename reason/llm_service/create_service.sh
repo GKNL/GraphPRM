@@ -18,7 +18,7 @@ VALUE_MODEL_NAME=GraphPRM-7B
 MODEL_PATH=$MODEL_BASE/$POLICY_MODEL_NAME
 VALUE_MODEL_PATH=$REWARD_BASE/$VALUE_MODEL_NAME
 
-LOGDIR=logs_fastchat
+LOGDIR=logs_GraphPRM
 
 tmux start-server
 tmux new-session -s GraphPRM -n controller -d
