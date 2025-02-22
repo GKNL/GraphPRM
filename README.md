@@ -4,8 +4,8 @@ Code and data for KDD 2025 Research Track Anonymous Submission: "Rewarding Graph
 
 ## Dataset and Model Weight Link
 
-**Full dataset can be accessed at:** [https://huggingface.co/datasets/MisBench/MisBench](https://huggingface.co/datasets/MisBench/MisBench) (Anonymous Repository)
-**Full GraphPRM model weight can be accessed at:** [https://huggingface.co/datasets/MisBench/MisBench](https://huggingface.co/datasets/MisBench/MisBench) (Anonymous Repository)
+**Full dataset can also be accessed at:** [GraphSilo](https://huggingface.co/datasets/GraphPRM/GraphSilo), [GraphSilo-Test](https://huggingface.co/datasets/GraphPRM/GraphSilo-Test) (Anonymous Repository)
+<!-- **Full GraphPRM model weight can be accessed at:** [https://huggingface.co/datasets/MisBench/MisBench](https://huggingface.co/datasets/MisBench/MisBench) (Anonymous Repository) -->
 
 ## Key File Descriptions
 
