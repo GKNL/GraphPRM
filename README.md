@@ -6,8 +6,10 @@
    <a href='https://huggingface.co/datasets/GraphPRM/GraphSilo'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-GraphSilo-blue'></a>
    <a href='https://huggingface.co/GraphPRM/GraphPRM-7B'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-GraphPRM-purple'></a>
    <a href='https://github.com/GKNL/GraphPRM'><img src='https://img.shields.io/badge/GitHub-GraphPRM-green'></a>
+   <a href="https://doi.org/10.5281/zenodo.15553492"><img src="https://zenodo.org/badge/930775894.svg" alt="DOI"></a>
    </p>
 </div>
+
 
 **GraphPRM** is the first Process Reward Model tailored for graph reasoning tasks, which further enhancing LLMs' mathematical reasoning capabilities on other reasoning domains, including mathematical problem-solving tasks. We also developed **GraphSilo**, the largest dataset for graph reasoning with fine-grained CoT solutions, with 118,189 samples and 394,165 step-wise labels.
 
